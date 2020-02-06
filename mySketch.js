@@ -44,13 +44,13 @@ let creditsBool = false;
 let start, restart, creditsButton; //Start, restart, credits button variables
 
 function preload() { //Importing images and sounds 
-	skull = loadImage('images/skull');
-	cannon = loadImage('images/cannon');
-	fire = loadImage('images/fire');
-	song = loadSound('sounds/piratesong');
-	tada = loadSound('sounds/tada');
-	splat = loadSound('sounds/splat');
-	lose = loadSound('sounds/sadtrombone');
+	skull = loadImage('images/skull.png');
+	cannon = loadImage('images/cannon.png');
+	fire = loadImage('images/fire.png');
+	song = loadSound('sounds/piratesong.mp3');
+	tada = loadSound('sounds/tada.mp3');
+	splat = loadSound('sounds/splat.mp3');
+	lose = loadSound('sounds/sadtrombone.mp3');
 }
 
 function setup() {
@@ -458,7 +458,7 @@ class PlayerObject {
 		image(this.skullImg, this.X+160, this.Y-300);
 
 		//Cannon 
-		image(this.cannonImg, this.X-30, this.Y-90);
+		image(this.cannonImg, this.X-30, this.Y-70);
 	}
 	
 	hit(fireImg) { //When the user gets hit 
