@@ -397,13 +397,14 @@ function credits() {
 	text("Sound Effects:", cenX, top+275);
 	text("Gaming Sound FX", cenX, top+300);
 	text("youtube.com/watch?v=KUOfNtoJyLw", cenX, top+325);
-	text("Sound effect GAMING", cenX, top+350);
-	text("youtube.com/watch?v=KUOfNtoJyLw", cenX, top+375);
+	text("youtube.com/watch?v=CQeezCdF4mk", cenX, top+350);
+	text("Sound effect GAMING", cenX, top+375);
+	text("youtube.com/watch?v=KUOfNtoJyLw", cenX, top+400);
 	
-	text("Images:", cenX, top+425);
-	text("wikipedia.org/wiki/Jolly_Roger#/media/File:Pirate_Flag.svg", cenX, top+450);
-	text("https://webstockreview.net/pict/getfirst", cenX, top+475);
-	text("dnrc.mt.gov/divisions/water/operations/images/floodplain/Fire_Icon.png", cenX, top+500);
+	text("Images:", cenX, top+450);
+	text("wikipedia.org/wiki/Jolly_Roger#/media/File:Pirate_Flag.svg", cenX, top+475);
+	text("https://webstockreview.net/pict/getfirst", cenX, top+500);
+	text("dnrc.mt.gov/divisions/water/operations/images/floodplain/Fire_Icon.png", cenX, top+525);
 }
 
 class PlayerObject {
