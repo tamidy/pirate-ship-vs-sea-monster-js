@@ -8,8 +8,11 @@ Music:
 The Seven Seas by Brandon Fiechter (https://www.youtube.com/watch?v=ke8mhtFFtLw)
 
 Sound Effects: 
-Gaming Sound FX (https://www.youtube.com/watch?v=KUOfNtoJyLw)
-Sound effect GAMING (https://www.youtube.com/watch?v=Fgh1dqZS0oQ)
+Gaming Sound FX 
+(https://www.youtube.com/watch?v=KUOfNtoJyLw)
+(https://www.youtube.com/watch?v=CQeezCdF4mk)
+Sound effect GAMING 
+(https://www.youtube.com/watch?v=Fgh1dqZS0oQ)
 
 Images: 
 https://en.wikipedia.org/wiki/Jolly_Roger#/media/File:Pirate_Flag.svg
