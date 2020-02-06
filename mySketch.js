@@ -44,13 +44,13 @@ let creditsBool = false;
 let start, restart, creditsButton; //Start, restart, credits button variables
 
 function preload() { //Importing images and sounds 
-	skull = loadImage('skull.png');
-	cannon = loadImage('cannon.png');
-	fire = loadImage('fire.png');
-	song = loadSound('Pirate_Battle_Music_-_The_Seven_Seas.mp3');
-	tada = loadSound('tada.mp3');
-	splat = loadSound('splat.mp3');
-	lose = loadSound('Sad_Trombone.mp3');
+	skull = loadImage('images/skull.png');
+	cannon = loadImage('images/cannon.png');
+	fire = loadImage('images/fire.png');
+	song = loadSound('sounds/Pirate_Battle_Music_-_The_Seven_Seas.mp3');
+	tada = loadSound('sounds/tada.mp3');
+	splat = loadSound('sounds/splat.mp3');
+	lose = loadSound('sounds/Sad_Trombone.mp3');
 }
 
 function setup() {
