@@ -47,10 +47,10 @@ function preload() { //Importing images and sounds
 	skull = loadImage('images/skull');
 	cannon = loadImage('images/cannon');
 	fire = loadImage('images/fire');
-	song = loadSound('sounds/Pirate_Battle_Music_-_The_Seven_Seas');
+	song = loadSound('sounds/piratesong');
 	tada = loadSound('sounds/tada');
 	splat = loadSound('sounds/splat');
-	lose = loadSound('sounds/Sad_Trombone');
+	lose = loadSound('sounds/sadtrombone');
 }
 
 function setup() {
