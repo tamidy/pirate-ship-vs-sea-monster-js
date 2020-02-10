@@ -531,7 +531,7 @@ class MonsterObject {
 	attack() { //When the monster attacks 
 		noStroke();
 		fill(this.r, this.g, this.b);
-		triangle(this.X+100, this.Y+75, this.X+300, this.Y+25, windowWidth-500, (windowHeight*2)/3)
+		triangle(this.X+100, this.Y+75, this.X+300, this.Y+25, player.X, player.Y);
 	}
 	
 	restart() { //Resets the health level and positions
