@@ -1,4 +1,5 @@
-/* Disclaimer: This game was made for educational purposes. 
+/* 
+Disclaimer: This game was made for educational purposes. 
 
 References: 
 https://www.openprocessing.org/sketch/626042
@@ -14,9 +15,10 @@ Gaming Sound FX
 Sound effect GAMING 
 (https://www.youtube.com/watch?v=Fgh1dqZS0oQ)
 
+
 Images: 
 https://en.wikipedia.org/wiki/Jolly_Roger#/media/File:Pirate_Flag.svg
-https://www.vexels.com/png-svg/preview/141610/cannon-artillery-arms
+https://webstockreview.net/pict/getfirst
 http://dnrc.mt.gov/divisions/water/operations/images/floodplain/Fire_Icon.png/image_view_fullscreen
 */
 
@@ -44,13 +46,13 @@ let creditsBool = false;
 let start, restart, creditsButton; //Start, restart, credits button variables
 
 function preload() { //Importing images and sounds 
-	skull = loadImage('images/skull.png');
-	cannon = loadImage('images/cannon.png');
-	fire = loadImage('images/fire.png');
-	song = loadSound('sounds/piratesong.mp3');
-	tada = loadSound('sounds/tada.mp3');
-	splat = loadSound('sounds/splat.mp3');
-	lose = loadSound('sounds/sadtrombone.mp3');
+	skull = loadImage('skull.png');
+	cannon = loadImage('cannon.png');
+	fire = loadImage('fire.png');
+	song = loadSound('Pirate_Battle_Music_-_The_Seven_Seas.mp3');
+	tada = loadSound('tada.mp3');
+	splat = loadSound('splat.mp3');
+	lose = loadSound('Sad_Trombone.mp3');
 }
 
 function setup() {
@@ -96,13 +98,13 @@ function setup() {
 	
 	//Start and Restart buttons
 	start = createButton("Start");
-	start.position(cenX-50, 200);
+	start.position(cenX-50, 250);
 	start.size(90, 50);
 	start.mousePressed(startGame);
 
 	restart = createButton("Restart");
 	restart.hide(); //Hiding the button 
-	restart.position(cenX-50, 200);
+	restart.position(cenX-50, 250);
 	restart.size(90, 50);
 	restart.mousePressed(restartGame);	
 	
@@ -164,14 +166,14 @@ function draw() {
 	//Health Bars
 	noStroke();
 	//Monster
-	fill(0);
+	fill(slider.value());
 	rect(cenX/2-255, 15, 510, 30);
 	if (monster.health > 0) {
 		fill(144);
 		rect(cenX/2-250, 20, monster.health/2, 20); 
 	}
 	//Player 
-	fill(0);
+	fill(slider.value());
 	rect((windowWidth*3)/4-255, 15, 510, 30);
 	if (player.health > 0) {
 		fill(144);
@@ -331,7 +333,9 @@ function titleScreen() {
 	noStroke();
 	textSize(60);
 	textFont('Fantasy');
-	text("Welcome!", cenX, 150);
+	text("Ahoy Matey!", cenX, 150);
+	textSize(20);
+	text("Press the mouse to destroy the sea monster!", cenX, 200);
 }
 
 function restartGame() {
@@ -458,7 +462,7 @@ class PlayerObject {
 		image(this.skullImg, this.X+160, this.Y-300);
 
 		//Cannon 
-		image(this.cannonImg, this.X-30, this.Y-70);
+		image(this.cannonImg, this.X-30, this.Y-90);
 	}
 	
 	hit(fireImg) { //When the user gets hit 
