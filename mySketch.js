@@ -1,5 +1,4 @@
-/* 
-Disclaimer: This game was made for educational purposes. 
+/* Disclaimer: This game was made for educational purposes. 
 
 References: 
 https://www.openprocessing.org/sketch/626042
@@ -46,13 +45,13 @@ let creditsBool = false;
 let start, restart, creditsButton; //Start, restart, credits button variables
 
 function preload() { //Importing images and sounds 
-	skull = loadImage('skull.png');
-	cannon = loadImage('cannon.png');
-	fire = loadImage('fire.png');
-	song = loadSound('Pirate_Battle_Music_-_The_Seven_Seas.mp3');
-	tada = loadSound('tada.mp3');
-	splat = loadSound('splat.mp3');
-	lose = loadSound('Sad_Trombone.mp3');
+	skull = loadImage('images/skull.png');
+	cannon = loadImage('images/cannon.png');
+	fire = loadImage('images/fire.png');
+	song = loadSound('sounds/piratesong.mp3');
+	tada = loadSound('sounds/tada.mp3');
+	splat = loadSound('sounds/splat.mp3');
+	lose = loadSound('sounds/sadtrombone.mp3');
 }
 
 function setup() {
@@ -462,7 +461,7 @@ class PlayerObject {
 		image(this.skullImg, this.X+160, this.Y-300);
 
 		//Cannon 
-		image(this.cannonImg, this.X-30, this.Y-90);
+		image(this.cannonImg, this.X-30, this.Y-70);
 	}
 	
 	hit(fireImg) { //When the user gets hit 
