@@ -256,23 +256,20 @@ function wave() {
 	let amp = 10; //amplitude of the wave 
 	let period = 300; //period of the wave 
 	let waveX = TWO_PI/period; //x value of the wave, TWO_PI - built-in constant
+
+	theta += 0.02; //increasing the angle 
+	let x = theta; //temporary value
 	
-	//3 waves 
-	for (let i=0; i<2; i++) {
-		theta += 0.02; //increasing the angle 
-		let x = theta; //temporary value
-		
-		//Drawing across the entire window
-		for (let j=0; j<windowWidth; j++) {
-			waveYs[j] = sin(x) * amp; //setting up the y values with the sin() function and the amplitude
-			x += waveX; //incrementing the x value 
-		}
-		
-		//Color of the wave changes depending on the value of the slider
-		stroke(0, 74-(slider.value()/2), 255-(slider.value()/2));
-		for (let k=0; k<windowWidth; k++) {
-			line(k, waveYs[k]+(((windowHeight*2)/3)+90), k, windowHeight);
-		}
+	//Drawing across the entire window
+	for (let j=0; j<windowWidth; j++) {
+		waveYs[j] = sin(x) * amp; //setting up the y values with the sin() function and the amplitude
+		x += waveX; //incrementing the x value 
+	}
+	
+	//Color of the wave changes depending on the value of the slider
+	stroke(0, 74-(slider.value()/2), 255-(slider.value()/2));
+	for (let k=0; k<windowWidth; k++) {
+		line(k, waveYs[k]+(((windowHeight*2)/3)+90), k, windowHeight);
 	}
 }
 
