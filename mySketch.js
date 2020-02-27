@@ -125,6 +125,9 @@ function draw() {
 		fill(255, slider.value()-starOp[j]); //Opacity of the stars depends on the random value and the value of the slider 
 		ellipse(starX[j], starY[j], starSize[j], starSize[j]); 
 	}	
+
+	//Showing the sun and moon
+	sunMoon();	
 	
 	//Clouds
 	for (let i=0; i<6; i++) {
@@ -147,8 +150,7 @@ function draw() {
 		cloud(counters[i], tempY);
 	}
 	
-	//Showing the sun, moon, and player 
-	sunMoon();	
+	//Showing the player 
 	player.show();
 	
 	//Showing the monster
